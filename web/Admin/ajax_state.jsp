@@ -1,0 +1,1 @@
+<jsp:useBean class="db.dbConnection" id="obj"></jsp:useBean>
