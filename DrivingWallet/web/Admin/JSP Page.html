@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://localhost:8080/HappyweddingMatrimoni/user/Homepage.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>JSP Page</title>
+        
+        
+        <style>
+html {
+  box-sizing: border-box;
+}
+ .FormImage
+               {
+                   
+                    background:#d4d4d4 url("img/Happyweddinglogo.jpg")right;
+               }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 22%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 10px;
+
+  
+}
+.columnImage
+{
+    width: 90%;
+    border-radius: 50%;
+    border: solid;
+    border-color: #FFFFFF;
+    margin-left:10px;
+    margin-right: 20px;
+    height:  55%;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #363636;
+  border-radius: 20px;
+ // border: solid;
+ // border-color: #363636;
+  height: 420px;
+  background: #f5f5f5;
+}
+.card:hover
+{
+  box-shadow: 0 4px 8px 0 #363636;  
+  background: #FFFFFF;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: solid;
+  border-radius: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+ .MalyaliMarriage_logo
+                {
+                 padding:10px 15px;
+                 }
+                  .regcheck
+  {
+       border-style: solid;
+                       border-color: #363636;
+                       border-radius:10px; 
+                       padding: 5px 5px 5px 5px;
+                       margin-top: 20px;
+                       color: #FFFFFF;
+  }
+  .regcheck:hover
+  {
+      background-color: #ff0033;
+      box-shadow:0 8px 6px 0 #333;
+    
+     
+  }
+ .regtxtbox:hover
+ {
+      box-shadow:0 8px 6px 0 #333;
+ }
+  .MyChecKBox
+  {
+      vertical-align:middle; display:inline; float:none; margin:0px 2px 0px 3px; _margin:0px 1px 0px 1px;
+  }
+  .regHead
+  {
+                       border-style:2px solid;
+                       border-color: #363636;
+                       border-radius:10px; 
+                       padding: 5px 5px 5px 5px;
+                       background-color:#ff0033;
+                       
+  }
+  
+  .modalAboutMe {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+   // padding-top: 100px; /* Location of the box */
+   // left: 0; 
+   // top: 0;
+  // margin-top: 200px;
+   margin-left: 400px;
+    width: 400px; /* Full width */
+    height: 400px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+   // background-color: rgb(0,0,0); /* Fallback color */
+  //  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+   border: solid;
+   border-radius: 10px;
+   overflow: scroll;
+   overflow-x: hidden;
+   background: #FFFFFF;
+}
+ .close {
+   position: absolute;
+    top: 0px;
+    right: 5px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+ 
+ #myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+ // margin-top: 40px;
+  overflow: auto;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  font-size: 18px;
+  
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    background-color: #363636;
+    color: #FFFFFF;
+}
+
+#myTable3 {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+ // margin-top: 40px;
+  overflow: auto;
+}
+
+#myTable3 th, #myTable3 td {
+  text-align: left;
+  padding: 12px;
+  font-size: 18px;
+  
+}
+
+#myTable3 tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable3 tr.header, #myTable3 tr:hover {
+    background-color: #363636;
+    color: #FFFFFF;
+}
+#myTable1 {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+ // margin-top: 40px;
+  overflow: auto;
+}
+
+#myTable1 th, #myTable1 td {
+  text-align: left;
+  padding: 12px;
+  font-size: 18px;
+  
+}
+
+#myTable1 tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable1 tr.header, #myTable1 tr:hover {
+    background-color: #363636;
+    color: #FFFFFF;
+}
+.imageIcon
+{
+   font-size: 36px;
+    height: 68px;
+    width: 68px;
+    line-height: 68px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms; 
+}
+.imageIcon:hover
+{
+   border-radius: 20%;  
+}
+.Btn
+{
+   cursor: pointer;
+   background: #ff0033;
+   color: #FFFFFF;
+   border: none;
+        border-radius: 5px;
+
+}
+ .Btn:hover
+ {
+     //color: #363636;
+     //border: solid #333;
+   box-shadow: #ff0033 0px 8px 8px 0px;
+ }
+</style>
+        
+        
+    </head>
+    <body style="margin-left: 0px;margin-top: 0px">
+        
+         <div style="width: 1400px;height: 150px; background-color: #363636;margin-bottom: 10px;position: fixed">
+              <div class="MalyaliMarriage_logo" style="float:left;"> 
+					
+
+					<img src="./JSP Page_files/HWloggo.png" alt="Driving Wallet" title="Driving Wallet !" width="120" height="100">
+
+				    </div> 
+            <div style="color:#ff0033; font-size:26px; margin:0px auto;float:left; margin:50px 0px 0px 25px;">Digitally Solution For Being Forgotton  !!!
+                <a href="http://localhost:8080/HappyweddingMatrimoni/Admin/AdminHomepage.jsp"></a>
+            </div>
+              <div style="width: 1400px;height: 50px; background-color: #363636;margin-bottom: 10px;padding-left: 100px;padding-top: 100px;">
+                     <br>
+                     <table>
+                         <tbody><tr>
+                             <td>
+                                 <a href="AdminHomepage.jsp" id="HomeLink"> <label class="regcheck" style="background: #ff0033">Home</label></a>
+                             </td>
+                             <td>                                 <a href="#" id="HomeLink"> <label class="regcheck">State Entry</label></a>
+</td>
+                             
+     
+                              <td>
+                      <label class="regcheck" id="MyPrivacyLBL">User Feed Backs</label>
+                             </td>
+                         </tr>
+                     </tbody></table>
+                 </div>
+         </div>
+        
+        
+        <br>
+        
+                
